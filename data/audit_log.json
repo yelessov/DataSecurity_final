@@ -1,0 +1,9 @@
+[
+    {
+        "index": 0,
+        "timestamp": 1766243022.557345,
+        "event": "Genesis Block: System Init",
+        "prev_hash": "0",
+        "hash": "d156d915e983fc50afccdd82e486033fdf891aa7fb84992b206847dd0e2f54c1"
+    }
+]

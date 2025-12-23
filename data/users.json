@@ -1,0 +1,14 @@
+{
+    "test1": {
+        "salt": "47d2c5a86c774b61b099b067ef7c7766",
+        "hash": "fbe99df5b8ecbe7091ad2d5966f3b4b27f9703e76b490529e656c1c1486bb0bf"
+    },
+    "testing1": {
+        "salt": "ac5426e583412fec8e740aa9d21a219c",
+        "hash": "4771d6f79e5ed28a352380443f3b8948ded93372cc4aa03c86b3c5557161b460"
+    },
+    "abyl": {
+        "salt": "9d2e46b902a0658003da35a608035401",
+        "hash": "fd8e821b3a0457d01c8c0e99c10041adc4b7a097b75c6946b20e49c1dd98f25f"
+    }
+}
