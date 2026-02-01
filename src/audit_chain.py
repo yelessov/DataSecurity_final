@@ -9,12 +9,12 @@ class Block:
     def __init__(self, index, event, prev_hash, timestamp=None):
         self.index = index
         self.timestamp = timestamp or time.time()
-        self.event = event  # Текст события (например, "User registered")
+        self.event = event  # A human-friendly description of the event (for example: "User registered")
         self.prev_hash = prev_hash
         self.hash = self.calculate_hash()
 
     def calculate_hash(self):
-        # Хешируем комбинацию: индекс + время + данные + хеш прошлого блока
+        # Build a string from the block fields and hash it with SHA-256
         block_string = f"{self.index}{self.timestamp}{self.event}{self.prev_hash}"
         return hashlib.sha256(block_string.encode()).hexdigest()
 
@@ -33,7 +33,7 @@ class Blockchain:
         self.load_chain()
 
     def create_genesis_block(self):
-        # Первый блок всегда создается вручную
+        # Create the genesis block — the initial block of the chain
         return Block(0, "Genesis Block: System Init", "0")
 
     def get_latest_block(self):
@@ -52,19 +52,19 @@ class Blockchain:
 
     def is_chain_valid(self):
         """
-        Проходит по всей цепи и проверяет математическую целостность.
-        Если хоть один байт в файле был изменен хакером, вернет False.
+        Walk the entire chain and verify mathematical integrity.
+        If any byte in the stored file was modified by an attacker, return False.
         """
         for i in range(1, len(self.chain)):
             current = self.chain[i]
             prev = self.chain[i-1]
 
-            # 1. Проверка целостности данных внутри блока
+            # 1) Check that the stored hash still matches the block's contents
             if current.hash != current.calculate_hash():
                 print(f"[!!!] ОШИБКА: Хеш блока {i} неверен! Данные изменены.")
                 return False
             
-            # 2. Проверка связи с предыдущим блоком
+            # 2) Make sure this block correctly references the previous block's hash
             if current.prev_hash != prev.hash:
                 print(f"[!!!] ОШИБКА: Разрыв цепи между {i-1} и {i}!")
                 return False
@@ -82,10 +82,11 @@ class Blockchain:
                 with open(BLOCKCHAIN_FILE, 'r') as f:
                     data = json.load(f)
                     self.chain = [Block(b['index'], b['event'], b['prev_hash'], b['timestamp']) for b in data]
-                    # Если хеш в файле не совпадает с пересчитанным при загрузке - это уже подозрительно,
-                    # но для простоты мы оставим проверку в методе is_chain_valid
+                    # If stored hashes don't match recalculation that's suspicious,
+                    # so we perform the full integrity check in `is_chain_valid` instead of on load.
             except:
-                self.chain = [self.create_genesis_block()]
+                    self.chain = [self.create_genesis_block()]
+           
         else:
             self.chain = [self.create_genesis_block()]
             self.save_chain()

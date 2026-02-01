@@ -10,5 +10,10 @@
     "abyl": {
         "salt": "9d2e46b902a0658003da35a608035401",
         "hash": "fd8e821b3a0457d01c8c0e99c10041adc4b7a097b75c6946b20e49c1dd98f25f"
+    },
+    "secret_agent": {
+        "salt": "83521b2d6cfabdf5577e3018b4f69be9",
+        "hash": "409e91d2aaa888ba42d5221aab61479990baf2785f00c15238d6c7513414c84b",
+        "secret": "A0pEGyL2EuAtgQkA/s/Qu5+xvn3QyslBhET63ed9GesoRaNI5vb15sHMdGU5q/qJ1luaCUkk8TyMzNBw11q1/5kiHNQ="
     }
 }

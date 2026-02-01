@@ -2,22 +2,22 @@ import hashlib
 import time
 from multiprocessing import Pool, cpu_count
 
-# Функция-воркер (должна быть вне класса для работы multiprocessing)
+# Worker function executed in a separate process. It must be defined at module level
 def check_chunk(args):
     """
-    Эта функция выполняется на отдельном ядре процессора.
-    Она получает кусок словаря и проверяет его.
+    Run inside a worker process: check each word in the provided chunk
+    and return the matching password when found.
     """
     target_hash, salt, word_chunk = args
     
     for word in word_chunk:
         word = word.strip()
-        # Повторяем логику хеширования: Пароль + Соль
+        # Perform the same hash operation used by the application: password + salt
         attempt = word + salt
         attempt_hash = hashlib.sha256(attempt.encode()).hexdigest()
         
         if attempt_hash == target_hash:
-            return word # НАШЛИ!
+            return word # FOUND!
             
     return None
 
@@ -35,21 +35,19 @@ class ParallelCracker:
         
         start_time = time.time()
         
-        # 1. Разбиваем словарь на куски для каждого ядра
+        # Split the dictionary into chunks so each CPU core gets roughly equal work
         num_cores = cpu_count()
         chunk_size = len(words) // num_cores + 1
         chunks = [words[i:i + chunk_size] for i in range(0, len(words), chunk_size)]
         
-        # Подготавливаем аргументы для воркеров
+        # Build the argument tuples that will be passed to each worker
         tasks = [(target_hash, salt, chunk) for chunk in chunks]
-        
-        # 2. ПАРАЛЛЕЛЬНЫЙ ЗАПУСК
-        # Pool создает процессы-воркеры
+        # Run the workers in parallel using a process Pool. imap_unordered yields
+        # results as soon as any worker finishes so we can stop early when found.
         with Pool(processes=num_cores) as pool:
-            # imap_unordered запускает задачи и возвращает результат, как только кто-то закончил
             for result in pool.imap_unordered(check_chunk, tasks):
                 if result:
-                    pool.terminate() # Останавливаем остальные ядра, если нашли
+                    pool.terminate()  # tell Pool to stop remaining workers
                     end_time = time.time()
                     print(f"[!!!] ПАРОЛЬ НАЙДЕН: {result}")
                     print(f"[*] Время выполнения: {end_time - start_time:.4f} сек")

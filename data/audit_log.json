@@ -5,5 +5,96 @@
         "event": "Genesis Block: System Init",
         "prev_hash": "0",
         "hash": "d156d915e983fc50afccdd82e486033fdf891aa7fb84992b206847dd0e2f54c1"
+    },
+    {
+        "index": 1,
+        "timestamp": 1769694938.938352,
+        "event": "Registered: secret_agent",
+        "prev_hash": "d156d915e983fc50afccdd82e486033fdf891aa7fb84992b206847dd0e2f54c1",
+        "hash": "f26bd69b7f1b601eabe80f7d92f8748bb4431a8885081f69cfcdf14960afd6c4"
+    },
+    {
+        "index": 2,
+        "timestamp": 1769695030.5769558,
+        "event": "User Login Success: secret_agent",
+        "prev_hash": "f26bd69b7f1b601eabe80f7d92f8748bb4431a8885081f69cfcdf14960afd6c4",
+        "hash": "d03f6550254175d1832b4edc79d1a84947172ac6028c2bde765b0160d985718b"
+    },
+    {
+        "index": 3,
+        "timestamp": 1769695083.260253,
+        "event": "User Login Success: secret_agent",
+        "prev_hash": "d03f6550254175d1832b4edc79d1a84947172ac6028c2bde765b0160d985718b",
+        "hash": "d25a1167b2f91fa7233bfd8620f9df449413f4ab803639ce5e072eae22ee1ae0"
+    },
+    {
+        "index": 4,
+        "timestamp": 1769695090.111874,
+        "event": "User secret_agent updated their encrypted secret",
+        "prev_hash": "d25a1167b2f91fa7233bfd8620f9df449413f4ab803639ce5e072eae22ee1ae0",
+        "hash": "23e7a4ef096069d167dc91b59a0d0300e511adf53a7b142d3b4643219eab64d9"
+    },
+    {
+        "index": 5,
+        "timestamp": 1769695158.6132648,
+        "event": "User Login Success: secret_agent",
+        "prev_hash": "23e7a4ef096069d167dc91b59a0d0300e511adf53a7b142d3b4643219eab64d9",
+        "hash": "fc68ffc6a7153b3458fb9a78e5ae4d35231460d58985e51f75d8014207a99d56"
+    },
+    {
+        "index": 6,
+        "timestamp": 1769695160.505399,
+        "event": "User secret_agent accessed their encrypted secret",
+        "prev_hash": "fc68ffc6a7153b3458fb9a78e5ae4d35231460d58985e51f75d8014207a99d56",
+        "hash": "a42e4d206509b2eebafd70ff4e9ca8619394bdbc7f65814543d6bc9c9b3cfb9f"
+    },
+    {
+        "index": 7,
+        "timestamp": 1769695649.6960242,
+        "event": "Login Success: secret_agent",
+        "prev_hash": "a42e4d206509b2eebafd70ff4e9ca8619394bdbc7f65814543d6bc9c9b3cfb9f",
+        "hash": "f9da42c52edf37290ae3e485b1a97609fc5baa2a4a58f53b86ba4ca862d1ba73"
+    },
+    {
+        "index": 8,
+        "timestamp": 1769695655.861006,
+        "event": "User secret_agent decrypted secret",
+        "prev_hash": "f9da42c52edf37290ae3e485b1a97609fc5baa2a4a58f53b86ba4ca862d1ba73",
+        "hash": "a24b49683eb00ebfdee7ae572d79266f315803933b2d4129d53a801bc1c2d459"
+    },
+    {
+        "index": 9,
+        "timestamp": 1769695672.0143192,
+        "event": "SECURITY ALERT: Brute-force started on secret_agent",
+        "prev_hash": "a24b49683eb00ebfdee7ae572d79266f315803933b2d4129d53a801bc1c2d459",
+        "hash": "722a4520ef8bbf2591a57abd5a7c4336aac6169d2e1d2adc0a94c4174e4a5454"
+    },
+    {
+        "index": 10,
+        "timestamp": 1769695674.116241,
+        "event": "Attack Failed: secret_agent is safe",
+        "prev_hash": "722a4520ef8bbf2591a57abd5a7c4336aac6169d2e1d2adc0a94c4174e4a5454",
+        "hash": "b6b1a46acf21d1248da9ef80930061f57a86c7aed22f0e88a23815fdcf9a01ef"
+    },
+    {
+        "index": 11,
+        "timestamp": 1769696220.1040509,
+        "event": "Login Success: secret_agent",
+        "prev_hash": "b6b1a46acf21d1248da9ef80930061f57a86c7aed22f0e88a23815fdcf9a01ef",
+        "hash": "0c688abc3a43b91ee5224ed67aa7600160e1e119b4daf497683f21f6563b68f1"
+    },
+    {
+        "index": 12,
+        "timestamp": 1769696227.324679,
+        "event": "User secret_agent generated RSA KeyPair. Public Key hash: 4700982929459568271",
+        "prev_hash": "0c688abc3a43b91ee5224ed67aa7600160e1e119b4daf497683f21f6563b68f1",
+        "hash": "2528629f89a65ab28a4ed16a7f5c466ae4d1647eee59da193f8a12d8917b8605"
+    },
+    {
+        "index": 13,
+        "timestamp": 1769696235.8316789,
+        "event": "User secret_agent signed a document (RSA)",
+        "prev_hash": "2528629f89a65ab28a4ed16a7f5c466ae4d1647eee59da193f8a12d8917b8605",
+        "hash": "8e6ea7b7e9dfbdc25a93a0b3303f707f5a3ec8c88f43b143515bc57f3414f112"
     }
 ]
