@@ -58,8 +58,8 @@ This project simulates a secure enterprise environment where user actions are lo
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git](https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git)
-    cd YOUR_REPO_NAME
+    git clone https://github.com/yelessov/DataSecurity_final.git
+    cd DataSecurity_final
     ```
 
 2.  **Install dependencies:**
@@ -99,4 +99,4 @@ This project implements core Data Security concepts:
 ---
 
 ### Author
-**[Your Name]** - Data Security Student
+**Abylkaiyr Yelessov** - Data Science Student
