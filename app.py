@@ -42,7 +42,6 @@ if page == "User Dashboard (User)":
         if st.button("Login"):
             user_data = auth.get_user_data(username)
             if user_data:
-                # This is a simple demo password check — do not use in production.
                 st.session_state['logged_user'] = username
                 st.session_state['logged_pass'] = password # Keep password in session briefly for AES key derivation
                 st.session_state['user_salt'] = user_data['salt']
@@ -52,10 +51,10 @@ if page == "User Dashboard (User)":
                 import hashlib
                 check = hashlib.sha256((password + user_data['salt']).encode()).hexdigest()
                 if check == user_data['hash']:
-                    st.success(f"Добро пожаловать, {username}!")
+                    st.success(f"Welcome, {username}!")
                     audit.add_event(f"Login Success: {username}")
                 else:
-                    st.error("Неверный пароль")
+                    st.error("НWrong Password")
                     st.session_state['logged_user'] = None
             else:
                 st.error("User not found")
@@ -66,7 +65,7 @@ if page == "User Dashboard (User)":
         new_pass = st.text_input("New password", type="password")
         if st.button("Register"):
             if auth.register(new_user, new_pass):
-                st.success("Аккаунт создан! Теперь войдите.")
+                st.success("The account was created, now you can sign in")
                 audit.add_event(f"User Registered: {new_user}")
             else:
                 st.warning("Пользователь уже существует.")

@@ -96,5 +96,264 @@
         "event": "User secret_agent signed a document (RSA)",
         "prev_hash": "2528629f89a65ab28a4ed16a7f5c466ae4d1647eee59da193f8a12d8917b8605",
         "hash": "8e6ea7b7e9dfbdc25a93a0b3303f707f5a3ec8c88f43b143515bc57f3414f112"
+    },
+    {
+        "index": 14,
+        "timestamp": 1770574946.682473,
+        "event": "User Registered: test12",
+        "prev_hash": "8e6ea7b7e9dfbdc25a93a0b3303f707f5a3ec8c88f43b143515bc57f3414f112",
+        "hash": "79f2cf8563e375fb8135ad2320b139978708fb1a2b22dbc934197ec7968c9e72"
+    },
+    {
+        "index": 15,
+        "timestamp": 1770574953.195936,
+        "event": "Login Success: test12",
+        "prev_hash": "79f2cf8563e375fb8135ad2320b139978708fb1a2b22dbc934197ec7968c9e72",
+        "hash": "86a7c00eaacccf69eee099b0f9b9576beb7271f2ac42454da977a4fc38d0997a"
+    },
+    {
+        "index": 16,
+        "timestamp": 1770575018.3418171,
+        "event": "User Registered: test123",
+        "prev_hash": "86a7c00eaacccf69eee099b0f9b9576beb7271f2ac42454da977a4fc38d0997a",
+        "hash": "70e630e1b0f65e6b7d04d46fa2e81d93863bf4e1ff3f6ba69a266b31b7108328"
+    },
+    {
+        "index": 17,
+        "timestamp": 1770575107.947314,
+        "event": "User Registered: John",
+        "prev_hash": "70e630e1b0f65e6b7d04d46fa2e81d93863bf4e1ff3f6ba69a266b31b7108328",
+        "hash": "0173b2c212b6764efc30598d3c4775a75f62cd41b2aedf47433a4e52f89c997a"
+    },
+    {
+        "index": 18,
+        "timestamp": 1770575702.082137,
+        "event": "Login Success: John",
+        "prev_hash": "0173b2c212b6764efc30598d3c4775a75f62cd41b2aedf47433a4e52f89c997a",
+        "hash": "4a9e37b18fe03d77deeb4093eff1b7dee13673448232285622b5ac46a6683532"
+    },
+    {
+        "index": 19,
+        "timestamp": 1770575808.932767,
+        "event": "User John updated AES secret",
+        "prev_hash": "4a9e37b18fe03d77deeb4093eff1b7dee13673448232285622b5ac46a6683532",
+        "hash": "af214f3a66346f83a59da4a9cd5a98136195df60ecfc62717e2c5a0125eb7738"
+    },
+    {
+        "index": 20,
+        "timestamp": 1770575811.544728,
+        "event": "User John decrypted secret",
+        "prev_hash": "af214f3a66346f83a59da4a9cd5a98136195df60ecfc62717e2c5a0125eb7738",
+        "hash": "c21e8e4e6b3435dfffddc198506d30e560859103f092579cc1d871075d2b818e"
+    },
+    {
+        "index": 21,
+        "timestamp": 1770577100.8243752,
+        "event": "Login Success: John",
+        "prev_hash": "c21e8e4e6b3435dfffddc198506d30e560859103f092579cc1d871075d2b818e",
+        "hash": "076212912e5226fd1445a53131b9278c730014a26d323154c0250a604a54890c"
+    },
+    {
+        "index": 22,
+        "timestamp": 1770577131.3295648,
+        "event": "User John generated RSA KeyPair. Public Key hash: 5114540419255743320",
+        "prev_hash": "076212912e5226fd1445a53131b9278c730014a26d323154c0250a604a54890c",
+        "hash": "26c578caf5203a8d55d99a65dc5064b36dd3ba61fa839ba7cbb4e9f7817e284a"
+    },
+    {
+        "index": 23,
+        "timestamp": 1770577153.528926,
+        "event": "User John signed a document (RSA)",
+        "prev_hash": "26c578caf5203a8d55d99a65dc5064b36dd3ba61fa839ba7cbb4e9f7817e284a",
+        "hash": "19ff03670b91ef86a6e6184054925a8a5cc31ca6109db969f4b5e9d5053a1b25"
+    },
+    {
+        "index": 24,
+        "timestamp": 1770577172.124483,
+        "event": "User John signed a document (RSA)",
+        "prev_hash": "19ff03670b91ef86a6e6184054925a8a5cc31ca6109db969f4b5e9d5053a1b25",
+        "hash": "434dcf54e895327d00c2f3bbd66756ef04774ce5149c5d67e3f5fd7a59fb7c81"
+    },
+    {
+        "index": 25,
+        "timestamp": 1770577633.9755058,
+        "event": "User Registered: victim",
+        "prev_hash": "434dcf54e895327d00c2f3bbd66756ef04774ce5149c5d67e3f5fd7a59fb7c81",
+        "hash": "cf9d5ec2afb8feedf2e2e085ec5cb180b60b9fbb69edcb02a38d824e3be2adf1"
+    },
+    {
+        "index": 26,
+        "timestamp": 1770577641.252696,
+        "event": "SECURITY ALERT: Brute-force started on victim",
+        "prev_hash": "cf9d5ec2afb8feedf2e2e085ec5cb180b60b9fbb69edcb02a38d824e3be2adf1",
+        "hash": "ecde6e635630693f7d79e23065eb4cc09f11b747963ba63a488e786c71c308a6"
+    },
+    {
+        "index": 27,
+        "timestamp": 1770577643.395663,
+        "event": "Attack Failed: victim is safe",
+        "prev_hash": "ecde6e635630693f7d79e23065eb4cc09f11b747963ba63a488e786c71c308a6",
+        "hash": "68b0a597f6bc5519de8d5ef0a413b1602302c3d56bc31255645df6df01fc399e"
+    },
+    {
+        "index": 28,
+        "timestamp": 1770577669.8219352,
+        "event": "User Registered: victim1",
+        "prev_hash": "68b0a597f6bc5519de8d5ef0a413b1602302c3d56bc31255645df6df01fc399e",
+        "hash": "c751f95173ebe270e43e6a973553c482580d165deaeb37ff472c8d5b3b8b9610"
+    },
+    {
+        "index": 29,
+        "timestamp": 1770577679.9208362,
+        "event": "SECURITY ALERT: Brute-force started on victim1",
+        "prev_hash": "c751f95173ebe270e43e6a973553c482580d165deaeb37ff472c8d5b3b8b9610",
+        "hash": "53d37eb02138eb041abf29de7b5073e06f7119d965113a1726f0f194848afe5f"
+    },
+    {
+        "index": 30,
+        "timestamp": 1770577681.808803,
+        "event": "Attack Failed: victim1 is safe",
+        "prev_hash": "53d37eb02138eb041abf29de7b5073e06f7119d965113a1726f0f194848afe5f",
+        "hash": "be80c2a9d50370d36fca206199391c25661af6ed22d5944bd0a809c50f7b6b31"
+    },
+    {
+        "index": 31,
+        "timestamp": 1770577895.001924,
+        "event": "User Registered: victim2",
+        "prev_hash": "be80c2a9d50370d36fca206199391c25661af6ed22d5944bd0a809c50f7b6b31",
+        "hash": "61e36e345f93301ce59084b9078863ee5c427a3330aa82dda9cf590287ffba23"
+    },
+    {
+        "index": 32,
+        "timestamp": 1770577902.2049239,
+        "event": "SECURITY ALERT: Brute-force started on victim2",
+        "prev_hash": "61e36e345f93301ce59084b9078863ee5c427a3330aa82dda9cf590287ffba23",
+        "hash": "8d4446b3f034566c3d3008cc99ea2ad1b19f4177a682cfb9d8e7f721c62fa158"
+    },
+    {
+        "index": 33,
+        "timestamp": 1770577904.27949,
+        "event": "CRITICAL: User victim2 PWNED. Password: password123",
+        "prev_hash": "8d4446b3f034566c3d3008cc99ea2ad1b19f4177a682cfb9d8e7f721c62fa158",
+        "hash": "3dcb75669ecea2655471662fc0a0e6e68f9edaff9e662238245ca752c51c7d1d"
+    },
+    {
+        "index": 34,
+        "timestamp": 1770625355.230717,
+        "event": "Login Success: John",
+        "prev_hash": "3dcb75669ecea2655471662fc0a0e6e68f9edaff9e662238245ca752c51c7d1d",
+        "hash": "f260bd8452f332a08c418378c10142a45a0eee66ecd27837ceb78f1d9cada096"
+    },
+    {
+        "index": 35,
+        "timestamp": 1770625394.801682,
+        "event": "User John updated AES secret",
+        "prev_hash": "f260bd8452f332a08c418378c10142a45a0eee66ecd27837ceb78f1d9cada096",
+        "hash": "72fe6363a897ef27dc13bec72b91380996cbb355bd5d55fb2aeb2cf33c772473"
+    },
+    {
+        "index": 36,
+        "timestamp": 1770625396.875041,
+        "event": "User John decrypted secret",
+        "prev_hash": "72fe6363a897ef27dc13bec72b91380996cbb355bd5d55fb2aeb2cf33c772473",
+        "hash": "4f56202bdab6ab86de953a83356fa3d4fa7dccea7c5cf07d3ab6204f262aa428"
+    },
+    {
+        "index": 37,
+        "timestamp": 1770625450.5591838,
+        "event": "SECURITY ALERT: Brute-force started on victim2",
+        "prev_hash": "4f56202bdab6ab86de953a83356fa3d4fa7dccea7c5cf07d3ab6204f262aa428",
+        "hash": "a2d8861bff05eb3975a9427a1f311262f134fc60b10d2559513649ff6ce88704"
+    },
+    {
+        "index": 38,
+        "timestamp": 1770625452.395512,
+        "event": "CRITICAL: User victim2 PWNED. Password: password123",
+        "prev_hash": "a2d8861bff05eb3975a9427a1f311262f134fc60b10d2559513649ff6ce88704",
+        "hash": "a7f7cd6fee93b25dc7e88d1739f7178ffcc547db388d6e2b59fb8474d41137b0"
+    },
+    {
+        "index": 39,
+        "timestamp": 1770625467.1634681,
+        "event": "SECURITY ALERT: Brute-force started on victim1",
+        "prev_hash": "a7f7cd6fee93b25dc7e88d1739f7178ffcc547db388d6e2b59fb8474d41137b0",
+        "hash": "803fd9364364157277cdb02a106b682552431c255e9413786476f25ea5ab04c8"
+    },
+    {
+        "index": 41,
+        "timestamp": 1770626662.644078,
+        "event": "User John signed a document (RSA)",
+        "prev_hash": "6ce6bdfd2959c17d757dafd1d56771ed34ee6221b4a9053f5a768034c5ed620e",
+        "hash": "2888ac219e935068ae65c14bc8d61c82384241d5dcffd8ba3614c511863029aa"
+    },
+    {
+        "index": 42,
+        "timestamp": 1770626688.45882,
+        "event": "User John decrypted secret",
+        "prev_hash": "2888ac219e935068ae65c14bc8d61c82384241d5dcffd8ba3614c511863029aa",
+        "hash": "8d3c69d522028c40db9abb457d369c1f0eccbb12cae1d0a0fba6ef7aab8d1a42"
+    },
+    {
+        "index": 43,
+        "timestamp": 1770638263.2418802,
+        "event": "SECURITY ALERT: Brute-force started on victim2",
+        "prev_hash": "8d3c69d522028c40db9abb457d369c1f0eccbb12cae1d0a0fba6ef7aab8d1a42",
+        "hash": "dfc4d11d4bcd2c6de88a4b996c950cee13bab25c21e144b33635fb0e558e673b"
+    },
+    {
+        "index": 44,
+        "timestamp": 1770638265.1532779,
+        "event": "CRITICAL: User victim2 PWNED. Password: password123",
+        "prev_hash": "dfc4d11d4bcd2c6de88a4b996c950cee13bab25c21e144b33635fb0e558e673b",
+        "hash": "0f8231d8733792d1b6ad783017de04685318b0e7c098790639c19f3997258815"
+    },
+    {
+        "index": 45,
+        "timestamp": 1770638285.627928,
+        "event": "Login Success: John",
+        "prev_hash": "0f8231d8733792d1b6ad783017de04685318b0e7c098790639c19f3997258815",
+        "hash": "6bf8b7f38b1c9bcf4024ed89caed120dd7fc165b99af97d7b64d4d9db83ac96e"
+    },
+    {
+        "index": 46,
+        "timestamp": 1770638292.3533812,
+        "event": "User John generated RSA KeyPair. Public Key hash: -8967040927425128112",
+        "prev_hash": "6bf8b7f38b1c9bcf4024ed89caed120dd7fc165b99af97d7b64d4d9db83ac96e",
+        "hash": "c623316de72da0de9c08c0e018aa8689d8a19a04d090cdaf8e6ec8c191118f26"
+    },
+    {
+        "index": 47,
+        "timestamp": 1770638300.377002,
+        "event": "User John signed a document (RSA)",
+        "prev_hash": "c623316de72da0de9c08c0e018aa8689d8a19a04d090cdaf8e6ec8c191118f26",
+        "hash": "1d68cc30ca358724689161c7559dacfaa10d38ac6cd68a44d4523b6339211fa3"
+    },
+    {
+        "index": 48,
+        "timestamp": 1770638362.533163,
+        "event": "User John updated AES secret",
+        "prev_hash": "1d68cc30ca358724689161c7559dacfaa10d38ac6cd68a44d4523b6339211fa3",
+        "hash": "62bfe823148f87962be386ef2b03a48d1a5f2f634dd3c3cdc9f8ef5ededd7a6a"
+    },
+    {
+        "index": 49,
+        "timestamp": 1770638364.2816901,
+        "event": "User John decrypted secret",
+        "prev_hash": "62bfe823148f87962be386ef2b03a48d1a5f2f634dd3c3cdc9f8ef5ededd7a6a",
+        "hash": "81f755a99a796428cb38f5eadc012b7c292b5e005036566f2566920fe1fc8c29"
+    },
+    {
+        "index": 50,
+        "timestamp": 1770638378.448137,
+        "event": "User John updated AES secret",
+        "prev_hash": "81f755a99a796428cb38f5eadc012b7c292b5e005036566f2566920fe1fc8c29",
+        "hash": "dc30a5fb62875fdfd3c7d559bdc76e65e49ceb9298bc0ff6e780bbbbb6990e1c"
+    },
+    {
+        "index": 51,
+        "timestamp": 1770638379.508266,
+        "event": "User John decrypted secret",
+        "prev_hash": "dc30a5fb62875fdfd3c7d559bdc76e65e49ceb9298bc0ff6e780bbbbb6990e1c",
+        "hash": "287cc126f5dfcf557ff6ad4c4f46e8f35600b1c5bec03fc62dc1403482fd285d"
     }
 ]

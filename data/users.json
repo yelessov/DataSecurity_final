@@ -15,5 +15,30 @@
         "salt": "83521b2d6cfabdf5577e3018b4f69be9",
         "hash": "409e91d2aaa888ba42d5221aab61479990baf2785f00c15238d6c7513414c84b",
         "secret": "A0pEGyL2EuAtgQkA/s/Qu5+xvn3QyslBhET63ed9GesoRaNI5vb15sHMdGU5q/qJ1luaCUkk8TyMzNBw11q1/5kiHNQ="
+    },
+    "test12": {
+        "salt": "3ad0d8221940ac973f2514dee8c27f21",
+        "hash": "abe8745133018fd3d38201a391fd569bf2bfc7666760c1a19b70338c332cbe86"
+    },
+    "test123": {
+        "salt": "3223cd0c265a8328ad08d4df9434bc12",
+        "hash": "9d0a0c4cb227c6da947f404aedf3fc5e172894ffee5db93d0f2e5e0ecb685328"
+    },
+    "John": {
+        "salt": "2a3ecf48fde44143ad7375c77b1dbe5b",
+        "hash": "43dc0b6238d202a96ead5177dceaf346d42d33fcc061075ff3b62f95fa80d7ae",
+        "secret": "nvPI7fH538VKnps4agt5ZDc2QSLA6RvRnM4vgVaL2HWPjA=="
+    },
+    "victim": {
+        "salt": "fe7124685c6c75f307813321ae1e37cf",
+        "hash": "4b2144f5f26200217509ab599ecb75c995df0b64ca4c93f6850c2d5f2bdc8b0e"
+    },
+    "victim1": {
+        "salt": "36670c498bb1de1941356f4f1da91d5b",
+        "hash": "a07162690a2890e36739aca41490b381afcf56d79df44e3137e47f3040ad16e3"
+    },
+    "victim2": {
+        "salt": "8e452ce1b08c38f5b7f3b6ba54859e60",
+        "hash": "864ca650c28730732f3b4d28914a635d22b46fed3e0e4f71b2c72cb6769e40b1"
     }
 }
